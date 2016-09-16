@@ -2,7 +2,7 @@
 <html ng-app="torrent-web-poc">
     <head>
         <meta charset="UTF-8">
-        <title>Torrent Web, a proof of concept</title>
+        <title>TF Torrent</title>
         <link rel="icon" type="image/png" href="assets/torrent-web-logo.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
@@ -15,7 +15,7 @@
             <md-content ng-switch-when="add-page" class="add-page" layout="row" layout-align="center center">
                 <form ng-submit="add()" class="torrent-input-box">
                     <md-input-container>
-                        <label>Torrent or Magnet link</label>
+                        <label>Torrent Link or Magnet link</label>
                         <input type="text" ng-model="m.url">
                     </md-input-container>
                 </form>
@@ -23,7 +23,7 @@
 
             <md-content ng-switch-when="loading-page" class="loading-page" layout="row" layout-align="center center" flex>
                 <md-progress-circular md-diameter="20" md-mode="indeterminate"></md-progress-circular>
-                <span>Fetching Torrent Metadata...</span>
+                <span>Fetching Torrent file Metadata...</span>
             </md-content>
 
             <md-content ng-switch-when="torrents-page" class="torrents-page" layout="column" layout-align="start center">
